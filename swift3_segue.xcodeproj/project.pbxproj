@@ -13,6 +13,7 @@
 		DB85E6EC29E847F400113D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB85E6EA29E847F400113D86 /* Main.storyboard */; };
 		DB85E6EE29E847F400113D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB85E6ED29E847F400113D86 /* Assets.xcassets */; };
 		DB85E6F129E847F400113D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB85E6EF29E847F400113D86 /* LaunchScreen.storyboard */; };
+		DB85E6F929E848F900113D86 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB85E6F829E848F900113D86 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DB85E6ED29E847F400113D86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB85E6F029E847F400113D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB85E6F229E847F400113D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB85E6F829E848F900113D86 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				DB85E6E429E847F400113D86 /* AppDelegate.swift */,
 				DB85E6E629E847F400113D86 /* SceneDelegate.swift */,
+				DB85E6F829E848F900113D86 /* SecondViewController.swift */,
 				DB85E6E829E847F400113D86 /* ViewController.swift */,
 				DB85E6EA29E847F400113D86 /* Main.storyboard */,
 				DB85E6ED29E847F400113D86 /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB85E6F929E848F900113D86 /* SecondViewController.swift in Sources */,
 				DB85E6E929E847F400113D86 /* ViewController.swift in Sources */,
 				DB85E6E529E847F400113D86 /* AppDelegate.swift in Sources */,
 				DB85E6E729E847F400113D86 /* SceneDelegate.swift in Sources */,
