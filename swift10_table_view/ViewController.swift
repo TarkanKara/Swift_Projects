@@ -75,5 +75,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.fade)
         }
     }
+    
+    // Bir hücreye veya row a tıklandığında ne olacağına karar vermem için aşağıdaki fonksşyonu kullanıyoruz.
+    // didSelectRowAt
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toDetailVC", sender: nil)
+    }
 }
 

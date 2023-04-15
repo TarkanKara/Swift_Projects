@@ -24,16 +24,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WCu-8Z-3OW" secondAttribute="trailing" id="2lb-96-aGa"/>
-                            <constraint firstItem="WCu-8Z-3OW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="I1a-2w-ue8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WCu-8Z-3OW" secondAttribute="bottom" id="M8P-Dl-ELL"/>
-                            <constraint firstItem="WCu-8Z-3OW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sxg-HL-4ZQ"/>
+                            <constraint firstItem="WCu-8Z-3OW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QzC-8D-v9R"/>
+                            <constraint firstItem="WCu-8Z-3OW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="SwU-Rz-NSa"/>
+                            <constraint firstItem="WCu-8Z-3OW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="h7k-xI-2QC"/>
+                            <constraint firstItem="WCu-8Z-3OW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iBu-Ug-HLm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VUM-nH-HWh"/>
                     <connections>
                         <outlet property="tableView" destination="WCu-8Z-3OW" id="kv3-Xo-gRv"/>
-                        <segue destination="jZX-Kz-ls1" kind="show" identifier="toSecondVC" id="qVC-CI-u6d"/>
+                        <segue destination="jZX-Kz-ls1" kind="show" identifier="toDetailVC" id="qVC-CI-u6d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -48,14 +48,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FKT-Dw-kco">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FKT-Dw-kco">
                                 <rect key="frame" x="16" y="184" width="361" height="231"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nw-7e-EVZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nw-7e-EVZ">
                                 <rect key="frame" x="16" y="115" width="361" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="gA5-8O-sqJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -63,6 +64,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4NH-2x-OZl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7nw-7e-EVZ" firstAttribute="trailing" secondItem="FKT-Dw-kco" secondAttribute="trailing" id="Akn-O8-Gag"/>
+                            <constraint firstItem="7nw-7e-EVZ" firstAttribute="top" secondItem="4NH-2x-OZl" secondAttribute="top" constant="12" id="E2O-bS-LKx"/>
+                            <constraint firstItem="7nw-7e-EVZ" firstAttribute="leading" secondItem="FKT-Dw-kco" secondAttribute="leading" id="GI3-kz-1hu"/>
+                            <constraint firstItem="7nw-7e-EVZ" firstAttribute="trailing" secondItem="bNT-C2-n5P" secondAttribute="trailingMargin" id="ZBj-FZ-l99"/>
+                            <constraint firstItem="4NH-2x-OZl" firstAttribute="bottom" secondItem="FKT-Dw-kco" secondAttribute="bottom" constant="403" id="ghD-PP-k9Y"/>
+                            <constraint firstItem="FKT-Dw-kco" firstAttribute="top" secondItem="7nw-7e-EVZ" secondAttribute="bottom" constant="17" id="xpA-9l-HGJ"/>
+                            <constraint firstItem="7nw-7e-EVZ" firstAttribute="leading" secondItem="bNT-C2-n5P" secondAttribute="leadingMargin" id="yQk-Ax-5O2"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MVk-0C-M1m"/>
                     <connections>
