@@ -15,11 +15,36 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var tableView: UITableView!
     
+    var countryName = [String]()
+    //var countryImage = [UIImage]()
+    var contryImageStr = [String]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // tableView ın delegate ve dataSource nu ViewController için bidiriyoruz.
         tableView.delegate = self
         tableView.dataSource = self
+        
+        countryName.append("Almanya")
+        countryName.append("Amerika")
+        countryName.append("Fransa")
+        countryName.append("Hollanda")
+        countryName.append("Türkiye")
+        
+        // Diğer ViewController Sayfamızda görselleri kullanacağımızdan buna şimdilik gerek yok sadece isimlerini tutmamız yeterli
+        // countryImage.append(UIImage(named: "almanya")!)
+        // countryImage.append(UIImage(named: "amerika")!)
+        // countryImage.append(UIImage(named: "fransa")!)
+        // countryImage.append(UIImage(named: "hollanda")!)
+        // countryImage.append(UIImage(named: "turkey")!)
+        
+        // isimlendirme assets klasörün içerisindeki gibi olacaktır. Aksi taktirde hata verecektir.
+        contryImageStr.append("almanya")
+        contryImageStr.append("amerika")
+        contryImageStr.append("fransa")
+        contryImageStr.append("hollanda")
+        contryImageStr.append("turkey")
         
     }
 
@@ -27,13 +52,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // cellForRow atIndexPath ----> hücrenin içerisinde neler gösterilecek
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return countryName.count
     }
     
     // Table View Cell, Table View’a ait tekrar eden satırlardur. Table View Cell ise UITableViewCell sınıfının bir oluşumudur.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "Tarkan"
+        //cell.textLabel?.text = "Tarkan"
+        cell.textLabel?.text = countryName[indexPath.row]
         return cell
     }
 }
