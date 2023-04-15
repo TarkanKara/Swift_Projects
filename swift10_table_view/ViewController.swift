@@ -19,6 +19,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //var countryImage = [UIImage]()
     var contryImageStr = [String]()
     
+    var selectedName = ""
+    var selectedImage = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +53,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     // numberOfRowsInSection ----> kaç tane row olacak
     // cellForRow atIndexPath ----> hücrenin içerisinde neler gösterilecek
-    
+     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return countryName.count
     }
@@ -76,10 +79,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    // Bir hücreye veya row a tıklandığında ne olacağına karar vermem için aşağıdaki fonksşyonu kullanıyoruz.
+    // Bir hücreye veya row a tıklandığında ne olacağına karar vermem için aşağıdaki fonksiyonu kullanıyoruz.
     // didSelectRowAt
+    // Diğer viewController ekranına geçişi için performSegue kullnaıyoruz.
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedName = countryName[indexPath.row]
+        selectedImage = contryImageStr[indexPath.row]
         performSegue(withIdentifier: "toDetailVC", sender: nil)
+    }
+    
+    // Diğer Ekrana veri aktarımı
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailVC" {
+            let detailDestations = segue.destination as! ViewController2
+            detailDestations.selectedNameController = selectedName
+            detailDestations.selectedImageController = selectedImage
+        }
     }
 }
 
