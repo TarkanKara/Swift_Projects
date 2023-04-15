@@ -62,5 +62,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = countryName[indexPath.row]
         return cell
     }
+    
+    // TableView de row hücrelerini silme işlemleri
+    // commit editingStyle
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        //Verileri Dizinin içerisinde çıkaracağız
+        // TableView güncelleme işlemleri yapacağız
+        if editingStyle == .delete {
+            countryName.remove(at: indexPath.row)
+            contryImageStr.remove(at: indexPath.row)
+            //TableView güncelleme
+            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.fade)
+        }
+    }
 }
 
