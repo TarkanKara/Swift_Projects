@@ -13,6 +13,7 @@
 		DB853A8B29EA7ECC004DB79E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB853A8929EA7ECC004DB79E /* Main.storyboard */; };
 		DB853A8D29EA7ECC004DB79E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB853A8C29EA7ECC004DB79E /* Assets.xcassets */; };
 		DB853A9029EA7ECC004DB79E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB853A8E29EA7ECC004DB79E /* LaunchScreen.storyboard */; };
+		DB853A9829EA7F9E004DB79E /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB853A9729EA7F9E004DB79E /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DB853A8C29EA7ECC004DB79E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB853A8F29EA7ECC004DB79E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB853A9129EA7ECC004DB79E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB853A9729EA7F9E004DB79E /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				DB853A8329EA7ECC004DB79E /* AppDelegate.swift */,
 				DB853A8529EA7ECC004DB79E /* SceneDelegate.swift */,
 				DB853A8729EA7ECC004DB79E /* ViewController.swift */,
+				DB853A9729EA7F9E004DB79E /* ViewController2.swift */,
 				DB853A8929EA7ECC004DB79E /* Main.storyboard */,
 				DB853A8C29EA7ECC004DB79E /* Assets.xcassets */,
 				DB853A8E29EA7ECC004DB79E /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB853A8829EA7ECC004DB79E /* ViewController.swift in Sources */,
+				DB853A9829EA7F9E004DB79E /* ViewController2.swift in Sources */,
 				DB853A8429EA7ECC004DB79E /* AppDelegate.swift in Sources */,
 				DB853A8629EA7ECC004DB79E /* SceneDelegate.swift in Sources */,
 			);
