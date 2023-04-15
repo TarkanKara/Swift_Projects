@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // ViewControllarımıza tableView için delegate ve dataSource bildiriyoruz
+        // tableView ın delegate ve dataSource nu ViewController için bidiriyoruz.
         tableView.delegate = self
         tableView.dataSource = self
         
